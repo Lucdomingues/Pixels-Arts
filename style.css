@@ -31,3 +31,17 @@ body {
 #blue {
   background-color: blue;
 }
+
+#pixel-board {
+  width: 700px;
+  margin-top: 50px;
+}
+
+.pixel {
+  border: 1px solid black;
+  padding: 40px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: white;
+}
