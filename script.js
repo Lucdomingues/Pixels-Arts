@@ -3,7 +3,7 @@ const first = document.getElementById('black');
 const second = document.getElementById('red');
 const third = document.getElementById('green');
 const quarto = document.getElementById('blue');
-
+const btnClear = document.getElementById('clear-board');
 // criador dos pixels;
 
 let childsQuadro;
@@ -51,6 +51,11 @@ function pintar() {
   }
 }
 pintar();
-// // requisito 06;
-
-// window.onload = () => {
+// requisito 09;
+function clear() {
+  const btn = quadroDePixels.children;
+  for (let f = 0; f < btn.length; f += 1) {
+    btn[f].style.backgroundColor = 'white';
+  }
+}
+btnClear.addEventListener('click', clear);
